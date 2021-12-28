@@ -117,7 +117,7 @@ function DetailStock() {
     const fetchData = async () => {
         setLoading(true);
         try {
-            const stockResponse = await axios.get("tera localhost ip" + "/stock_prediction/?" + name)
+            const stockResponse = await axios.get("http://localhost:8000" + "/stock_prediction/?company=" + name.toLowerCase())
             console.log(stockResponse)
             let newData = [];
             for (let i = 0; i < stockResponse.real_prices.length; i++) {
