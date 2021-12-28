@@ -1,27 +1,14 @@
-const get_env = () => {
+const BASE_URL_MAP = {"development": "http://localhost:8000", "production": "xx"}
+const BASE_APP_URL_MAP = {"development": "http://localhost:3000", "production": "yy"}
+
+const BASE_URL = BASE_URL_MAP[get_env()]
+export const get_env = () => {
 	if (process.env.NODE_ENV === 'development') {
 		return "development"
 	} else {
 		return "production"
 	}
 }
-
-const BASE_URL_MAP = {"development": "http://localhost:8000", "production": "xx"}
-const BASE_APP_URL_MAP = {"development": "http://localhost:3000", "production": "yy"}
-
-const BASE_URL = BASE_URL_MAP[get_env()]
-export cconst get_env = () => {
-	if (process.env.NODE_ENV === 'development') {
-		return "development"
-	} else {
-		return "production"
-	}
-}
-
-const BASE_URL_MAP = {"development": "http://localhost:8000", "production": "xx"}
-const BASE_APP_URL_MAP = {"development": "http://localhost:3000", "production": "yy"}
-
-const BASE_URL = BASE_URL_MAP[get_env()]
 export const BASE_APP_URL = BASE_APP_URL_MAP[get_env()]
 
 const getHeaders = () => {

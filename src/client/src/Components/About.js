@@ -1,15 +1,12 @@
 import React from 'react'
-
+import udai from '../udai.jpg'
+import shikhar from '../shikhar.jpg'
+import shubham from '../shubham.jpg'
+import somya from '../somya.jpeg'
 function About() {
     return (
-        <div class="flex flex-col items-center justify-center h-screen px-40 mt-20 mb-20 box-border">
-            <div class="text-center mb-20">
-                <p class="mt-10 text-sm limport React from 'react'
-
-function About() {
-    return (
-        <div class="flex flex-col items-center justify-center h-screen px-40 mt-20 mb-20 box-border">
-            <div class="text-center mb-20">
+        <div class="flex flex-col items-center justify-center h-screen px-40 mt-7 mb-5 box-border">
+            <div class="text-center">
                 <p class="mt-10 text-sm leading-7 text-gray-500 font-regular uppercase">
                     MEET
                 </p>
@@ -19,46 +16,42 @@ function About() {
             </div>
             <div className="flex flex-row flex-wrap justify-around">
                 <figure class="relative max-w-xs cursor-pointer m-10">
-                    <img class="rounded-lg shadow-xl hover:shadow-2xl" src="https://images.unsplash.com/photo-1570169797118-99f5f90c4e25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
-                    <figcaption class="absolute text-lg -mt-16 text-white px-4">
-                        <div>
-                            <h1>Udai Gupta</h1>
-                        </div>
-                        <div>
-                            <h1>Subtitle</h1>
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure class="relative max-w-xs cursor-pointer m-10">
-                    <img class="rounded-lg shadow-xl hover:shadow-2xl" src="https://images.unsplash.com/photo-1570169797118-99f5f90c4e25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
-                    <figcaption class="absolute text-lg -mt-16 text-white px-4">
-                        <div>
-                            <h1>Shikhar Sharma</h1>
-                        </div>
-                        <div>
-                            <h1>Subtitle</h1>
-                        </div>
-                    </figcaption>
-                </figure>
-                <figure class="relative max-w-xs cursor-pointer m-10">
-                    <img class="rounded-lg shadow-xl hover:shadow-2xl" src="https://images.unsplash.com/photo-1570169797118-99f5f90c4e25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+                    <img class="rounded-lg shadow-xl hover:shadow-2xl" src={shubham} style={{height:'15rem',width:'30rem'}}/>
                     <figcaption class="absolute text-lg -mt-16 text-white px-4">
                         <div>
                             <h1>Shubham Khandelwal</h1>
                         </div>
                         <div>
-                            <h1>Subtitle</h1>
                         </div>
                     </figcaption>
                 </figure>
                 <figure class="relative max-w-xs cursor-pointer m-10">
-                    <img class="rounded-lg shadow-xl hover:shadow-2xl" src="https://images.unsplash.com/photo-1570169797118-99f5f90c4e25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" />
+                    <img class="rounded-lg shadow-xl hover:shadow-2xl" src={somya} style={{height:'15rem',width:'30rem'}}/>
                     <figcaption class="absolute text-lg -mt-16 text-white px-4">
                         <div>
                             <h1>Soumya Maheshwari</h1>
                         </div>
                         <div>
-                            <h1>Subtitle</h1>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="relative max-w-xs cursor-pointer m-10">
+                    <img class="rounded-lg shadow-xl hover:shadow-2xl" src={udai} style={{height:'15rem',width:'30rem'}}/>
+                    <figcaption class="absolute text-lg -mt-16 text-white px-4">
+                        <div>
+                            <h1>Udai Gupta</h1>
+                        </div>
+                        <div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="relative max-w-xs cursor-pointer m-10">
+                    <img class="rounded-lg shadow-xl hover:shadow-2xl" src={shikhar} style={{height:'15rem',width:'30rem'}}/>
+                    <figcaption class="absolute text-lg -mt-16 text-white px-4">
+                        <div>
+                            <h1>Shikhar Sharma</h1>
+                        </div>
+                        <div>
                         </div>
                     </figcaption>
                 </figure>

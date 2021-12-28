@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
     const menu = document.querySelector("#menu")
@@ -20,40 +21,12 @@ function Navbar() {
           md:py-0
           px-4
           text-lg text-gray-700
-          bg-white bg-opacity-0
+          bg-gray
         "
                 >
                     <div>
-                        <a href="#">
-                            <svg
-                                xmlns="http://import React from 'react'
-
-function Navbar() {
-    const menu = document.querySelector("#menu")
-    return (
-        <div
-            class="
-      antialiased
-      absolute top-0 left-0 w-full h-10 bg-opacity-0 p-2 font-extrabold text-lg z-50
-    "
-        >
-            <header>
-                <nav
-                    class="
-          flex flex-wrap
-          items-center
-          justify-between
-          w-full
-          py-4
-          md:py-0
-          px-4
-          text-lg text-gray-700
-          bg-white bg-opacity-0
-        "
-                >
-                    <div>
-                        <a href="#">
-                            <svg
+                        <Link to="/" style={{ textDecoration: 'none' }}>
+                            {/* <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="150"
                                 height="32.125"
@@ -99,8 +72,9 @@ function Navbar() {
                                         />
                                     </g>
                                 </g>
-                            </svg>
-                        </a>
+                            </svg> */}
+                            <h1 className="text-4xl">Stock Predictor</h1>
+                        </Link>
                     </div>
 
                     <svg
@@ -109,7 +83,7 @@ function Navbar() {
                         class="h-6 w-6 cursor-pointer md:hidden block"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke="currentColor" 
+                        stroke="currentColor"
                         onClick={() => menu.classList.toggle("hidden")}
                     >
                         <path
@@ -130,23 +104,18 @@ function Navbar() {
               md:pt-0"
                         >
                             <li>
-                                <a class="md:p-4 py-2 block text-purple-700 hover:text-gray-700" href="/"
-                                >Home</a
+                                <Link to="/" style={{ textDecoration: 'none' }} class="md:p-4 py-9 block text-2xl text-purple-900 hover:text-gray-900">Home  </Link>
+                            </li>
+                            <li>
+                                <Link to="/stocks" style={{ textDecoration: 'none' }} class="md:p-4 py-2 block text-2xl text-purple-900 hover:text-gray-900">Stocks</Link
                                 >
                             </li>
                             <li>
-                                <a class="md:p-4 py-2 block text-purple-700 hover:text-gray-700" href="#"
-                                >Stocks</a
+                                <Link to="/aboutus" style={{ textDecoration: 'none' }} class="md:p-4 py-2 block text-2xl text-purple-900 hover:text-gray-900">About Us</Link
                                 >
                             </li>
                             <li>
-                                <a class="md:p-4 py-2 block text-purple-700 hover:text-gray-700" href="#"
-                                >About Us</a
-                                >
-                            </li>
-                            <li>
-                                <a class="md:p-4 py-2 block text-purple-700 hover:text-gray-700" href="#"
-                                >Contact</a
+                                <Link to="/contact" style={{ textDecoration: 'none' }} class="md:p-4 py-2 block text-2xl text-purple-900 hover:text-gray-900"> Contact</Link
                                 >
                             </li>
                         </ul>
@@ -154,7 +123,7 @@ function Navbar() {
                 </nav>
             </header>
 
-            <hr className="m-5"/>
+            <hr className="m-5" />
             {/* <div class="px-4">
                 <div
                     class="
