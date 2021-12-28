@@ -17,14 +17,14 @@ from tensorflow.keras.models import model_from_json
 class PredictGroupView(APIView):
 
     def get(self, request):
-        # company = request.GET.get('company', False)
+        company = request.GET.get('company', False)
         # data = json.loads(request.body.decode("utf-8"))
         # company = data.get('company', None)
         # model = data.get('model', None)
         # to_date = datetime.strptime(request.GET.get('to_date'), "%Y%m%d") if request.GET.get('to_date') else None
         # from_date = datetime.strptime(request.GET.get('from_date'), "%Y%m%d") if request.GET.get('from_date') else None
         # for_date = datetime.strptime(request.GET.get('for_date'), "%Y%m%d") if request.GET.get('for_date') else None
-        company = "tesla"
+        # company = "tesla"
         if company is None:
             return Response({}, status=status.HTTP_400_BAD_REQUEST)
         if company == 'google':
